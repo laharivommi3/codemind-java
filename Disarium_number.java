@@ -14,14 +14,13 @@ class Main
         }
         if(sum==temp)
         return true;
-        else 
+        else
         return false;
     }
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n;
-        n=sc.nextInt();
+        int n=sc.nextInt();
         if(isDisarium(n))
         System.out.println("True");
         else
