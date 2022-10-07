@@ -18,6 +18,6 @@ class Main
             if(x[i]<A || x[i]>B)
             sum+=x[i];
         }
-        System.out.println(sum);
+        System.out.print(sum);
     }
 }
