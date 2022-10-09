@@ -4,7 +4,7 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,x[],i,A,B,sum=0;
+        int x[],n,i,A,B,sum=0;
         n=sc.nextInt();
         x=new int[n];
         for(i=0;i<n;i++)
@@ -13,8 +13,8 @@ class Main
         B=sc.nextInt();
         for(i=0;i<n;i++)
         {
-            if(x[i]>=A && x[i]<=B)
-            sum=sum+x[i];
+        if(x[i]>=A && x[i]<=B)
+        sum=sum+x[i];
         }
         System.out.println(sum);
     }
