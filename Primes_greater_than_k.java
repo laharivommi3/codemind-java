@@ -16,10 +16,10 @@ class Main
         else
         return false;
     }
-     public static void main(String args[])
+    public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int x[],i,n,count=0,k;
+        int x[],n,i,k,c=0;
         n=sc.nextInt();
         x=new int[n];
         for(i=0;i<n;i++)
@@ -27,12 +27,12 @@ class Main
         k=sc.nextInt();
         for(i=0;i<n;i++)
         {
-          if(isPrime(x[i]))
-          {
-              if(x[i]>=k)
-              count++;
-          }
+            if(isPrime(x[i]))
+            {
+                if(x[i]>=k)
+                c++;
+            }
         }
-        System.out.println(count);
+       System.out.println(c); 
     }
 }
