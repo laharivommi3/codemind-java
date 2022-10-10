@@ -19,9 +19,7 @@ class Main
                 }
             }
             if(i==j && x[i]%2==0)
-            {
-                count++;
-            }
+            count++;
         }
         System.out.println(count);
     }
