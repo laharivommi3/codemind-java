@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Strings
+{
+  public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   String s1=sc.nextLine();
+   int count=1;
+   for(int i=0;i<s1.length();i++)
+      {
+       char ch=s1.charAt(i);
+       if(ch==' ' && s1.charAt(i+1)!=' ')
+         count++;
+      }
+    System.out.println(count);
+  }
+}
