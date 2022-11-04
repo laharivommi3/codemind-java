@@ -4,13 +4,13 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,x[],k,i,sum=0;
+        int n,x[],i,sum=0,k;
         n=sc.nextInt();
         x=new int[n];
         for(i=0;i<n;i++)
         x[i]=sc.nextInt();
         k=sc.nextInt();
-        for(i=0;i<=k-1;i++)
+        for(i=0;i<k;i++)
         {
             sum=sum+x[i];
         }
