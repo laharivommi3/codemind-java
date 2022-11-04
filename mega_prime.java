@@ -21,7 +21,7 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,r,d,c=0;
+        int n,r,c=0,d;
         n=sc.nextInt();
         d=(int)Math.log10(n)+1;
         if(isPrime(n))
@@ -31,7 +31,9 @@ class Main
             r=n%10;
             n=n/10;
             if(isPrime(r))
+            {
             c++;
+            }
         }
         }
         if(c==d)
