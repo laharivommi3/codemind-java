@@ -4,7 +4,7 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int x[],n,i,a,b,min,c=0;
+        int n,x[],i,a,b,min,c=0;
         n=sc.nextInt();
         x=new int[n];
         for(i=0;i<n;i++)
