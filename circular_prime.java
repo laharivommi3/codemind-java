@@ -3,39 +3,42 @@ class Main
 {
     public static boolean isPrime(int n)
     {
-        int count=0;
+        int c=0;
+        if(n==1)
+        return false;
         for(int i=2;i<=(int)Math.sqrt(n);i++)
         {
             if(n%i==0)
-              count++;
+            {
+                c++;
+            }
         }
-        if(count==0)
+        if(c==0)
         return true;
         else
         return false;
     }
-    public static int reverse(int p)
+    public static int reverse(int n)
     {
-        int r=0,sum=0;
-        while(p>0)
+        int rev=0,r;
+        while(n>0)
         {
-            r=p%10;
-            sum=sum*10+r;
-            p=p/10;
+            r=n%10;
+            rev=rev*10+r;
+            n=n/10;
         }
-        return sum;
+        return rev;
     }
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int m;
-        m=sc.nextInt();
-        if(!isPrime(m))
+        int n;
+        n=sc.nextInt();
+        if(!isPrime(n))
         System.out.println("not prime");
-        else if(isPrime(reverse(m)))
+        else if(isPrime(n) && isPrime(reverse(n)))
         System.out.println("circular prime");
-        else
+        else if(isPrime(n) && !isPrime(reverse(n)))
         System.out.println("prime but not a circular prime");
-        
     }
 }
