@@ -21,11 +21,13 @@ class Main
         n1=sc.nextInt();
         n2=sc.nextInt();
         sum=n1+n2;
-        for(int i=sum+1; ;i++)
+        for(int i=sum+1;;i++)
         {
             c++;
             if(isPrime(i))
+            {
             break;
+            }
         }
         System.out.println(c);
     }
